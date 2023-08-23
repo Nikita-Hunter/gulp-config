@@ -1,24 +1,22 @@
 html {
   box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--light-color);
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
-.page {
-  height: 100%;
-  font-family: var(--font-family, sans-serif);
-  -webkit-text-size-adjust: 100%;
-}
-
-.page__body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100%;
-  font-size: 16px;
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  background-color: var(--light-color);
+  color: var(--black-color);
 }
 
 img {
@@ -29,6 +27,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .site-container {
